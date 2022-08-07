@@ -12,7 +12,13 @@ def info():
     print("Central Autonomic System, enter help to see list of commands!")
 
 def help():
-    print("Commands list: \n info \n help \n bot \n get \n cas ")
+    print("Commands list: \n info \n help \n bot \n get ")
+
+def bot():
+  print("https://discord.com/api/oauth2/authorize?client_id=1002217263199420426&permissions=8&scope=bot")
+
+def get():
+  print("https://github.com/Komandarm/C.A.SConsole")
 
 print("Hello user, this is official C.A.S Console!")
 t.sleep(1)
@@ -26,7 +32,10 @@ while True:
       info()
   if command == 'help':
       help()
-  
+  if command == 'bot':
+    bot()
+  if command == 'get':
+    get()
   elif command == 'exit':
     sys.exit()
   else:
